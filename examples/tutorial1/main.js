@@ -19,7 +19,7 @@ const startCsound = async () => {
 
   csound = await Csound();
 
-  await csound.compileCsdText(csd);
+  await csound.compileCSD(csd);
   await csound.start();
 
   document.querySelector('#startButton').remove();
